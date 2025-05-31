@@ -1,37 +1,37 @@
-# API de Produtos - Express.js
+# Product API - Express.js
 
-Está é uma API Rest feita com Node.js e Express.js para gerenciar uma lista de produtos mockados.
+This is a REST API built with Node.js and Express.js to manage a mock list of products.
 
 ## Endpoints
 
 ### GET /api/products
-Retorna uma lista de produtos.
 
-**Exemplo de resposta:**
+Returns a list of products.
+
+**Example response:**
+
+json
 {
-  "message": "Sucess",
-  "produtos": [
-    { "name": "Rice", "price": "$ 1.4" },
-    { "name": "Fice", "price": "$ 1.2" }
+  "message": "Success",
+  "products": [
+    { "name": "Rice", "price": "1.4" },
+    { "name": "Fice", "price": "1.2" }
   ]
 }
 
 ### POST /api/products
-Retorna uma lista de produtos.
 
-**Corpo da requisição (JSON):**
-{
-  "name": "Bread",
-  "price": "$ 1.0"
-}
+Adds a new product.
 
-**Exemplo de resposta (sucesso):**
+**Example response (success):**
+
 {
   "message": "Product created",
-  "product": { "name": "Bread", "price": "$ 1.0" }
+  "product": { "name": "Bread", "price": "1.0" }
 }
 
-**Exemplo de resposta (erro):**
+**Example response (error):**
+
 {
   "message": "Either name or price is invalid"
 }
