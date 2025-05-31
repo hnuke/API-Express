@@ -1,6 +1,5 @@
 # Product API - Express.js
-
-This is a REST API built with Node.js and Express.js to manage a mock list of products.
+This is a full-stack application featuring a REST API built with Node.js and Express.js for managing a product list, backed by a PostgreSQL database. The frontend is developed with React, TypeScript, and Vite.
 
 ## Endpoints
 
